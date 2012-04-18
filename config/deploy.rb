@@ -1,12 +1,12 @@
  # The project repo name. (one word: no spaces, dashes, or underscores)
-set :application, "basewp"
+set :application, "WordPress-Deployable"
 
 # Legacy from porting from drupal, best to just leave this as "default"
 set :domains, ["default"]
 
 # Set the repository type and location to deploy from.
 set :scm, :git
-set :repository,  "git@github.com:your_github_account/#{application}.git"
+set :repository,  "git@github.com:ajmorris/WordPress-Deployable.git"
 # set :scm, :subversion
 # set :repository,  "https://svn.example.com/svn/#{application}/trunk/"
 # set(:scm_password) { Capistrano::CLI.password_prompt("SCM Password: ") }
@@ -38,4 +38,4 @@ set :httpd_group, 'apache'
 
 
 #set this to where you have installed your wp site locally (http://[local_domain]/wp-admin/ should exist. )
-set :local_domain, 'basewp.chrisbot'
+set :local_domain, 'wordpress.dev'

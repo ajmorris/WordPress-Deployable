@@ -1,5 +1,5 @@
 # Set the deployment directory on the target hosts.
-set :deploy_to, "/var/www/sites/virtual/#{application}-#{stage}"
+set :deploy_to, "~/Dropbox/Websites/#{application}-#{stage}"
 
 # The hostnames to deploy to.
 role :web, "#{application}-#{stage}.example.com"
