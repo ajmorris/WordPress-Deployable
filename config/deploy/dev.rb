@@ -2,11 +2,11 @@
 set :deploy_to, "~/Dropbox/Websites/#{application}-#{stage}"
 
 # The hostnames to deploy to.
-role :web, "#{application}-#{stage}.example.com"
+role :web, "#{application}-#{stage}.wordpress.dev"
 
 # Specify one of the web servers to use for database backups or updates.
 # This server should also be running Wordpress.
-role :db, "#{application}-#{stage}.example.com", :primary => true
+role :db, "#{application}-#{stage}.wordpress.dev", :primary => true
 
 # The path to wp-cli
 set :wp, "cd #{current_path}/#{app_root} ; /usr/bin/wp"
